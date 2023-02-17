@@ -1070,7 +1070,7 @@
         {
          "columns":64,
          "firstgid":286,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/spritesheet_01.png",
+         "image":"..\/tilesets\/spritesheet_01.png",
          "imageheight":2048,
          "imagewidth":2048,
          "margin":0,
@@ -1083,7 +1083,7 @@
         {
          "columns":64,
          "firstgid":4382,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/spritesheet_02.png",
+         "image":"..\/tilesets\/spritesheet_02.png",
          "imageheight":2048,
          "imagewidth":2048,
          "margin":0,
@@ -1096,7 +1096,7 @@
         {
          "columns":64,
          "firstgid":8478,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/spritesheet_03.png",
+         "image":"..\/tilesets\/spritesheet_03.png",
          "imageheight":2048,
          "imagewidth":2048,
          "margin":0,
@@ -1109,7 +1109,7 @@
         {
          "columns":64,
          "firstgid":12574,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/spritesheet_floor.png",
+         "image":"..\/tilesets\/spritesheet_floor.png",
          "imageheight":2048,
          "imagewidth":2048,
          "margin":0,
