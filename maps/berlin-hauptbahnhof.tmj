@@ -3535,7 +3535,7 @@
         {
          "columns":32,
          "firstgid":286,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_ME_City_Props.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_ME_City_Props.png",
          "imageheight":2720,
          "imagewidth":1024,
          "margin":0,
@@ -3548,7 +3548,7 @@
         {
          "columns":59,
          "firstgid":3006,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_ME_City_Terrains.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_ME_City_Terrains.png",
          "imageheight":2176,
          "imagewidth":1888,
          "margin":0,
@@ -3561,7 +3561,7 @@
         {
          "columns":13,
          "firstgid":7018,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/Custom_Windows.png",
+         "image":"..\/tilesets\/Custom_Windows.png",
          "imageheight":224,
          "imagewidth":416,
          "margin":0,
@@ -3574,7 +3574,7 @@
         {
          "columns":32,
          "firstgid":7109,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_ME_Garage_Sales.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_ME_Garage_Sales.png",
          "imageheight":1216,
          "imagewidth":1024,
          "margin":0,
@@ -3587,7 +3587,7 @@
         {
          "columns":16,
          "firstgid":8325,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MI_Basement.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MI_Basement.png",
          "imageheight":1600,
          "imagewidth":512,
          "margin":0,
@@ -3600,7 +3600,7 @@
         {
          "columns":16,
          "firstgid":9125,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MI_Clothing_Store.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MI_Clothing_Store.png",
          "imageheight":2144,
          "imagewidth":512,
          "margin":0,
@@ -3613,7 +3613,7 @@
         {
          "columns":16,
          "firstgid":10197,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MI_Condominium.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MI_Condominium.png",
          "imageheight":608,
          "imagewidth":512,
          "margin":0,
@@ -3626,7 +3626,7 @@
         {
          "columns":16,
          "firstgid":10501,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MI_Generic.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MI_Generic.png",
          "imageheight":2496,
          "imagewidth":512,
          "margin":0,
@@ -3639,7 +3639,7 @@
         {
          "columns":16,
          "firstgid":11749,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MI_Hospital.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MI_Hospital.png",
          "imageheight":3520,
          "imagewidth":512,
          "margin":0,
@@ -3652,7 +3652,7 @@
         {
          "columns":16,
          "firstgid":13509,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MI_Jail.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MI_Jail.png",
          "imageheight":1440,
          "imagewidth":512,
          "margin":0,
@@ -3665,7 +3665,7 @@
         {
          "columns":16,
          "firstgid":14229,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MI_Ice_Cream_Shop.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MI_Ice_Cream_Shop.png",
          "imageheight":544,
          "imagewidth":512,
          "margin":0,
@@ -3678,7 +3678,7 @@
         {
          "columns":16,
          "firstgid":14501,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MI_Kitchen.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MI_Kitchen.png",
          "imageheight":1568,
          "imagewidth":512,
          "margin":0,
@@ -3691,7 +3691,7 @@
         {
          "columns":16,
          "firstgid":15285,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MI_LivingRoom.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MI_LivingRoom.png",
          "imageheight":1440,
          "imagewidth":512,
          "margin":0,
@@ -3704,7 +3704,7 @@
         {
          "columns":16,
          "firstgid":16005,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MI_Museum.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MI_Museum.png",
          "imageheight":3904,
          "imagewidth":512,
          "margin":0,
@@ -3717,7 +3717,7 @@
         {
          "columns":16,
          "firstgid":17957,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MI_Music_Sport.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MI_Music_Sport.png",
          "imageheight":1536,
          "imagewidth":512,
          "margin":0,
@@ -3730,7 +3730,7 @@
         {
          "columns":76,
          "firstgid":18725,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MI_Room_Builder.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MI_Room_Builder.png",
          "imageheight":3488,
          "imagewidth":2432,
          "margin":0,
@@ -3743,7 +3743,7 @@
         {
          "columns":18,
          "firstgid":27009,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MI_User_Interface.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MI_User_Interface.png",
          "imageheight":448,
          "imagewidth":576,
          "margin":0,
@@ -3785,7 +3785,7 @@
         {
          "columns":16,
          "firstgid":27261,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MI_Visibile_Upstairs_System.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MI_Visibile_Upstairs_System.png",
          "imageheight":864,
          "imagewidth":512,
          "margin":0,
@@ -3798,7 +3798,7 @@
         {
          "columns":16,
          "firstgid":27693,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MO_Room_Builder.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MO_Room_Builder.png",
          "imageheight":448,
          "imagewidth":512,
          "margin":0,
@@ -3811,7 +3811,7 @@
         {
          "columns":16,
          "firstgid":27917,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MO.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MO.png",
          "imageheight":1696,
          "imagewidth":512,
          "margin":0,
@@ -3824,7 +3824,7 @@
         {
          "columns":6,
          "firstgid":28765,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/LimeZu\/LimeZu_MI_Anim_Arrow.png",
+         "image":"..\/tilesets\/LimeZu\/LimeZu_MI_Anim_Arrow.png",
          "imageheight":32,
          "imagewidth":192,
          "margin":0,
@@ -3866,7 +3866,7 @@
         {
          "columns":30,
          "firstgid":28771,
-         "image":"..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/..\/media\/shared\/Documents\/Ubuntu\/WorkAdventure\/Projects\/clients\/DeutscheBahn\/DBverse\/tilesets\/DB\/DB_Train_Station.png",
+         "image":"..\/tilesets\/DB\/DB_Train_Station.png",
          "imageheight":1056,
          "imagewidth":960,
          "margin":0,
