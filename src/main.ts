@@ -17,45 +17,49 @@ WA.onInit().then(() => {
     console.log('Scripting API ready');
     console.log('Player tags: ',WA.player.tags)
 
-    listenTour(DB_SCHENKER_HQ)
-    listenTour(DB_CONNECT)
-    listenTour(DB_SCHENKER_LOGISTICS)
-    listenTour(BERLIN_MAIN_STATION)
-    listenTour(BAHNTOWER)
-    listenTour(SILVER_TOWER)
-
-    // We are on level0 by default
-    hideLevel(1)
-    hideLevel(-1)
-
-    listenStairs()
-
-    // Switch levels
-    listenLevel(1)
-    listenLevel(0)
-    listenLevel(-1)
-
-    // Walk below level0 roofs
-    if (WA.state.currentLevel === 0) {
-        WA.room.onEnterLayer("level0/above/roof1").subscribe(() => {
-            hideMultipleLayers([
-                "level0/above/roof3",
-                "level0/above/roof2",
-                "level0/above/roof1"
-            ])
-        })
-        WA.room.onLeaveLayer("level0/above/roof1").subscribe(() => {
-            showMultipleLayers([
-                "level0/above/roof3",
-                "level0/above/roof2",
-                "level0/above/roof1"
-            ])
-        })
-    }
-
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
         console.log('Scripting API Extra ready');
+
+        if (WA.state.currentMap === 'city') {
+            listenTour(DB_SCHENKER_HQ)
+            listenTour(DB_CONNECT)
+            listenTour(DB_SCHENKER_LOGISTICS)
+            listenTour(BERLIN_MAIN_STATION)
+            listenTour(BAHNTOWER)
+            listenTour(SILVER_TOWER)
+        }
+    
+        if (WA.state.currentMap === 'station') {
+            // We are on level0 by default
+            hideLevel(1)
+            hideLevel(-1)
+    
+            listenStairs()
+    
+            // Switch levels
+            listenLevel(1)
+            listenLevel(0)
+            listenLevel(-1)
+    
+            // Walk below level0 roofs
+            if (WA.state.currentLevel === 0) {
+                WA.room.onEnterLayer("level0/above/roof1").subscribe(() => {
+                    hideMultipleLayers([
+                        "level0/above/roof3",
+                        "level0/above/roof2",
+                        "level0/above/roof1"
+                    ])
+                })
+                WA.room.onLeaveLayer("level0/above/roof1").subscribe(() => {
+                    showMultipleLayers([
+                        "level0/above/roof3",
+                        "level0/above/roof2",
+                        "level0/above/roof1"
+                    ])
+                })
+            }
+        }    
     }).catch(e => console.error(e));
 
 }).catch(e => console.error(e));

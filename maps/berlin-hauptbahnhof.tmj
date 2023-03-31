@@ -3277,10 +3277,28 @@
                  "width":0,
                  "x":1504,
                  "y":3008
+                }, 
+                {
+                 "class":"variable",
+                 "height":0,
+                 "id":29,
+                 "name":"currentMap",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"default",
+                         "type":"string",
+                         "value":"station"
+                        }],
+                 "rotation":0,
+                 "visible":true,
+                 "width":0,
+                 "x":1440,
+                 "y":3328
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -4918,7 +4936,7 @@
          "y":0
         }],
  "nextlayerid":109,
- "nextobjectid":29,
+ "nextobjectid":30,
  "orientation":"orthogonal",
  "properties":[
         {
