@@ -1,8 +1,8 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 
-import { bootstrapExtra } from "@workadventure/scripting-api-extra";
+import { bootstrapExtra } from "@workadventure/scripting-api-extra"
 
-console.log('Script started successfully');
+console.log('Script started successfully')
 
 // Tours layers
 const DB_SCHENKER_HQ = 'DB_Schenker_HQ'
@@ -14,12 +14,12 @@ const SILVER_TOWER = 'Silver_Tower'
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
-    console.log('Scripting API ready');
+    console.log('Scripting API ready')
     console.log('Player tags: ',WA.player.tags)
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(() => {
-        console.log('Scripting API Extra ready');
+        console.log('Scripting API Extra ready')
 
         if (WA.state.currentMap === 'city') {
             listenTour(DB_SCHENKER_HQ)
@@ -42,27 +42,24 @@ WA.onInit().then(() => {
             listenLevel(0)
             listenLevel(-1)
     
-            // Walk below level0 roofs
-            if (WA.state.currentLevel === 0) {
-                WA.room.onEnterLayer("level0/above/roof1").subscribe(() => {
-                    hideMultipleLayers([
-                        "level0/above/roof3",
-                        "level0/above/roof2",
-                        "level0/above/roof1"
-                    ])
-                })
-                WA.room.onLeaveLayer("level0/above/roof1").subscribe(() => {
-                    showMultipleLayers([
-                        "level0/above/roof3",
-                        "level0/above/roof2",
-                        "level0/above/roof1"
-                    ])
-                })
-            }
+            // Hide roofs when player walk below them
+            WA.room.onEnterLayer(`level${WA.state.currentLevel}/above/roof1`).subscribe(() => {
+                hideMultipleLayers([
+                    `level${WA.state.currentLevel}/above/roof3`,
+                    `level${WA.state.currentLevel}/above/roof2`,
+                    `level${WA.state.currentLevel}/above/roof1`
+                ])
+            })
+            WA.room.onLeaveLayer(`level${WA.state.currentLevel}/above/roof1`).subscribe(() => {
+                showMultipleLayers([
+                    `level${WA.state.currentLevel}/above/roof3`,
+                    `level${WA.state.currentLevel}/above/roof2`,
+                    `level${WA.state.currentLevel}/above/roof1`
+                ])
+            })
         }    
-    }).catch(e => console.error(e));
-
-}).catch(e => console.error(e));
+    }).catch(e => console.error(e))
+}).catch(e => console.error(e))
 
 const listenTour = (tour: string) => {
     WA.room.area.onEnter('Behind_' + tour).subscribe(() => {
@@ -85,7 +82,7 @@ const listenStairs = () => {
 const listenLevel = (level: number) => {
     WA.room.onEnterLayer(`level${level}/floor/floor1`).subscribe(() => {
         if (WA.state.playerOnStairs) {
-              // hide all levels except the current one
+            // hide all levels except the current one
             const levels: number[] = [-1, 0, 1]
             const levelsToHide = levels.filter(l => l !== level)
             console.log('levelsToHide',levelsToHide)
@@ -105,6 +102,9 @@ const showLevel = (level: number) => {
         `level${level}/above/above3`,
         `level${level}/above/above2`,
         `level${level}/above/above1`,
+        `level${level}/above/roof3`,
+        `level${level}/above/roof2`,
+        `level${level}/above/roof1`,
         `level${level}/furniture/furniture3`,
         `level${level}/furniture/furniture2`,
         `level${level}/furniture/furniture1`,
@@ -117,17 +117,20 @@ const showLevel = (level: number) => {
 }
 const hideLevel = (level: number) => {
     hideMultipleLayers([
-        `level${level}/above/above3`,
-        `level${level}/above/above2`,
-        `level${level}/above/above1`,
-        `level${level}/furniture/furniture3`,
-        `level${level}/furniture/furniture2`,
-        `level${level}/furniture/furniture1`,
-        `level${level}/walls/walls2`,
-        `level${level}/walls/walls1`,
-        `level${level}/floor/floor2`,
+        `level${level}/collisions`,
         `level${level}/floor/floor1`,
-        `level${level}/collisions`
+        `level${level}/floor/floor2`,
+        `level${level}/walls/walls1`,
+        `level${level}/walls/walls2`,
+        `level${level}/furniture/furniture1`,
+        `level${level}/furniture/furniture2`,
+        `level${level}/furniture/furniture3`,
+        `level${level}/above/roof1`,
+        `level${level}/above/roof2`,
+        `level${level}/above/roof3`,
+        `level${level}/above/above1`,
+        `level${level}/above/above2`,
+        `level${level}/above/above3`
     ])
 }
 
@@ -148,4 +151,4 @@ const hideMultipleLayers = (layers: string[]) => {
     }
 }
 
-export {};
+export {}
