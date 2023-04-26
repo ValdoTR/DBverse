@@ -12,6 +12,9 @@ const BERLIN_MAIN_STATION = 'Berlin_Main_Station'
 const BAHNTOWER = 'Bahntower'
 const SILVER_TOWER = 'Silver_Tower'
 
+let currentLevel = 0
+let playerOnStairs = false
+
 // Waiting for the API to be ready
 WA.onInit().then(() => {
     console.log('Scripting API ready')
@@ -32,6 +35,7 @@ WA.onInit().then(() => {
     
         if (WA.state.currentMap === 'station') {
             // We are on level0 by default
+
             hideLevel(1)
             hideLevel(-1)
     
@@ -43,18 +47,18 @@ WA.onInit().then(() => {
             listenLevel(-1)
     
             // Hide roofs when player walk below them
-            WA.room.onEnterLayer(`level${WA.state.currentLevel}/above/roof1`).subscribe(() => {
+            WA.room.onEnterLayer(`level${currentLevel}/above/roof1`).subscribe(() => {
                 hideMultipleLayers([
-                    `level${WA.state.currentLevel}/above/roof3`,
-                    `level${WA.state.currentLevel}/above/roof2`,
-                    `level${WA.state.currentLevel}/above/roof1`
+                    `level${currentLevel}/above/roof3`,
+                    `level${currentLevel}/above/roof2`,
+                    `level${currentLevel}/above/roof1`
                 ])
             })
-            WA.room.onLeaveLayer(`level${WA.state.currentLevel}/above/roof1`).subscribe(() => {
+            WA.room.onLeaveLayer(`level${currentLevel}/above/roof1`).subscribe(() => {
                 showMultipleLayers([
-                    `level${WA.state.currentLevel}/above/roof3`,
-                    `level${WA.state.currentLevel}/above/roof2`,
-                    `level${WA.state.currentLevel}/above/roof1`
+                    `level${currentLevel}/above/roof3`,
+                    `level${currentLevel}/above/roof2`,
+                    `level${currentLevel}/above/roof1`
                 ])
             })
         }    
@@ -72,16 +76,20 @@ const listenTour = (tour: string) => {
 
 const listenStairs = () => {
     WA.room.area.onEnter('stairs').subscribe(() => {
-        WA.state.playerOnStairs = true
+        playerOnStairs = true
     })
     WA.room.area.onLeave('stairs').subscribe(() => {
-        WA.state.playerOnStairs = false
+        playerOnStairs = false
     })
 }
 
 const listenLevel = (level: number) => {
     WA.room.onEnterLayer(`level${level}/floor/floor1`).subscribe(() => {
-        if (WA.state.playerOnStairs) {
+        if (playerOnStairs) {
+            // show the level we are on
+            currentLevel = level
+            showLevel(level)
+
             // hide all levels except the current one
             const levels: number[] = [-1, 0, 1]
             const levelsToHide = levels.filter(l => l !== level)
@@ -89,10 +97,6 @@ const listenLevel = (level: number) => {
             for (let level of levelsToHide) {
                 hideLevel(level)
             }
-          
-            // then show the level we are on
-            WA.state.currentLevel = level
-            showLevel(level)
         }
     })
 }
@@ -136,7 +140,7 @@ const hideLevel = (level: number) => {
 
 const showMultipleLayers = (layers: string[]) => {
     console.log('-----------------------------')
-    console.log('WA.state.currentLevel',WA.state.currentLevel)
+    console.log('currentLevel',currentLevel)
     for(let layer of layers) {
         console.log("SHOW layer", layer)
         WA.room.showLayer(layer)
@@ -144,7 +148,7 @@ const showMultipleLayers = (layers: string[]) => {
 }
 const hideMultipleLayers = (layers: string[]) => {
     console.log('-----------------------------')
-    console.log('WA.state.currentLevel',WA.state.currentLevel)
+    console.log('currentLevel',currentLevel)
     for(let layer of layers) {
         console.log("HIDE layer", layer)
         WA.room.hideLayer(layer)

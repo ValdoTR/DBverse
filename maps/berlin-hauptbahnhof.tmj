@@ -1127,7 +1127,7 @@
          "name":"level-1",
          "opacity":1,
          "type":"group",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -2135,7 +2135,7 @@
          "name":"level0",
          "opacity":1,
          "type":"group",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
@@ -3221,24 +3221,6 @@
                  "y":3456
                 }, 
                 {
-                 "class":"variable",
-                 "height":0,
-                 "id":25,
-                 "name":"currentLevel",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"default",
-                         "type":"int",
-                         "value":0
-                        }],
-                 "rotation":0,
-                 "visible":true,
-                 "width":0,
-                 "x":1376,
-                 "y":3008
-                }, 
-                {
                  "class":"area",
                  "height":128,
                  "id":26,
@@ -3259,24 +3241,6 @@
                  "width":512,
                  "x":1184,
                  "y":352
-                }, 
-                {
-                 "class":"variable",
-                 "height":0,
-                 "id":28,
-                 "name":"playerOnStairs",
-                 "point":true,
-                 "properties":[
-                        {
-                         "name":"default",
-                         "type":"bool",
-                         "value":false
-                        }],
-                 "rotation":0,
-                 "visible":true,
-                 "width":0,
-                 "x":1504,
-                 "y":3008
                 }, 
                 {
                  "class":"variable",
@@ -4044,7 +4008,7 @@
          "name":"level-1",
          "opacity":1,
          "type":"group",
-         "visible":true,
+         "visible":false,
          "x":0,
          "y":0
         }, 
@@ -4790,7 +4754,7 @@
          "name":"level0",
          "opacity":1,
          "type":"group",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
