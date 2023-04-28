@@ -34,8 +34,15 @@ WA.onInit().then(() => {
         }
     
         if (WA.state.currentMap === 'station') {
-            // We are on level0 by default
+            // for now, we have to disable WebRTC when players on different levels can be on the same 2D position.
+            WA.room.onEnterLayer("webrtc").subscribe(() => {
+                WA.controls.restorePlayerProximityMeeting()
+            })
+            WA.room.onLeaveLayer("webrtc").subscribe(() => {
+                WA.controls.disablePlayerProximityMeeting()
+            })
 
+            // We are on level0 by default
             hideLevel(1)
             hideLevel(-1)
     
